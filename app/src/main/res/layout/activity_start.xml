@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_launcher"
+        />
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:indeterminateDrawable="@drawable/progress"
+        android:layout_margin="100dp"
+        />
+    <TextView
+        android:id="@+id/checktv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Connecting.."
+        android:textColor="#fff"
+        android:textSize="25sp"
+        />
+<Button
+    android:onClick="out"
+    android:id="@+id/out"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="exit"
+    android:textColor="#fff"
+    android:background="@drawable/button_gradient"
+    android:textSize="25sp"
+    android:visibility="gone"
+    android:layout_margin="10dp"
+    />
+
+</LinearLayout>
